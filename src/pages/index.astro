@@ -5,22 +5,24 @@ import LandingHeader from "../components/LandingHeader.astro";
 import ModelS from "../components/ModelS.astro";
 import ModelThree from "../components/ModelThree.astro";
 import ModelX from "../components/ModelX.astro";
-import ModelY from "../components/ModelY.astro";
+import ModelY from "../components/Contacto.astro";
 import PowerWall from "../components/PowerWall.astro";
 import Layout from "../layouts/Layout.astro";
+import ContactForm from "../components/ContactForm.astro";
+import Contacto from "../components/Contacto.astro";
+
 ---
 
 <Layout title="Tesla - El coche de tus sueños (y de Elon Musk)">
   <LandingHeader />
+  
 
   <main
     class="snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth"
   >
+  
     <div class="snap-center">
       <HeroSection />
-    </div>
-    <div class="snap-center">
-      <ModelY />
     </div>
     <div class="snap-center">
       <ModelThree />
@@ -37,5 +39,8 @@ import Layout from "../layouts/Layout.astro";
     <div class="snap-center">
       <Accessories />
     </div>
-  </main>
+    <div class="snap-center">
+      <Contacto />
+    </div>
+
 </Layout>
